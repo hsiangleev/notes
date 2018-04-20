@@ -1,5 +1,5 @@
 # 学习笔记
-> #### 1. MongoDB笔记
+> 1. MongoDB笔记
 >       + [MongoDB操作符--$unset](https://github.com/hsiangleev/notes/issues/1)
 >       + [MongoDB操作符--$set](https://github.com/hsiangleev/notes/issues/2)
 >       + [MongoDB操作符--$rename](https://github.com/hsiangleev/notes/issues/3)
