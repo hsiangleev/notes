@@ -10,3 +10,6 @@
 >       + [MongoDB操作符--$slice](https://github.com/hsiangleev/notes/issues/8)
 >       + [MongoDB操作符--$占位符](https://github.com/hsiangleev/notes/issues/9)
 >       + [MongoDB数据导出导入](https://github.com/hsiangleev/notes/issues/10)
+
+> 2. react笔记
+>       + [react--npm](https://github.com/hsiangleev/notes/issues/11)
