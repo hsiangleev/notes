@@ -1,0 +1,502 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.5 筛选删除数组--$pull · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="push.html" />
+    
+    
+    <link rel="prev" href="pop.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    语法介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一章 MongoDB操作符
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="unset.html">
+            
+                <a href="unset.html">
+            
+                    
+                    1.1 删除对象的属性--$unset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="set.html">
+            
+                <a href="set.html">
+            
+                    
+                    1.2 更新或添加属性--$set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="rename.html">
+            
+                <a href="rename.html">
+            
+                    
+                    1.3 重新命名属性名--$rename
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="pop.html">
+            
+                <a href="pop.html">
+            
+                    
+                    1.4 删除数组--$pop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="pull.html">
+            
+                <a href="pull.html">
+            
+                    
+                    1.5 筛选删除数组--$pull
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="push.html">
+            
+                <a href="push.html">
+            
+                    
+                    1.6 添加数组--$push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="sort.html">
+            
+                <a href="sort.html">
+            
+                    
+                    1.7 数组排序--$sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="slice.html">
+            
+                <a href="slice.html">
+            
+                    
+                    1.8 数组截取--$slice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="placeholder.html">
+            
+                <a href="placeholder.html">
+            
+                    
+                    1.9 占位符--$
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="export.html">
+            
+                <a href="export.html">
+            
+                    
+                    1.10 数据导出导入
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第二章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/reactNpm.html">
+            
+                <a href="../chapter2/reactNpm.html">
+            
+                    
+                    2.1 react--npm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.5 筛选删除数组--$pull</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x5220;&#x9664;&#x6570;&#x7EC4;&#x4E2D;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x7684;&#x5143;&#x7D20;">&#x5220;&#x9664;&#x6570;&#x7EC4;&#x4E2D;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x7684;&#x5143;&#x7D20;</h3>
+<ol>
+<li>&#x521D;&#x59CB;<pre><code>{
+ &quot;_id&quot; : 1.0,
+ &quot;arr&quot; : [ 
+     {
+         &quot;a&quot;: 2,
+         &quot;b&quot;: 5,
+         &quot;c&quot;: 8
+     },
+     {
+         &quot;a&quot;: 6,
+         &quot;b&quot;: 7,
+         &quot;c&quot;: 8
+     }
+ ]
+}
+</code></pre><h5 id="&#x5220;&#x9664;&#x6570;&#x7EC4;arr&#x4E2D;&#x7684;a5&#x7684;&#x9879;">&#x5220;&#x9664;&#x6570;&#x7EC4;arr&#x4E2D;&#x7684;a&gt;=5&#x7684;&#x9879;</h5>
+<pre><code>db.getCollection(&apos;user&apos;).update(
+ {&quot;_id&quot;: 1.0},
+ {$pull: {&quot;arr&quot;: {&quot;a&quot;: {$gte: 5}}}}
+)
+</code></pre><h5 id="&#x7ED3;&#x679C;">&#x7ED3;&#x679C;</h5>
+<pre><code>{
+ &quot;_id&quot; : 1.0,
+ &quot;arr&quot; : [ 
+     {
+         &quot;a&quot; : 2,
+         &quot;b&quot; : 5,
+         &quot;c&quot; : 8
+     }
+ ]
+}
+</code></pre></li>
+<li>&#x4F7F;&#x7528;$elemMatch&#x5339;&#x914D;&#x591A;&#x4E2A;&#x6761;&#x4EF6;<pre><code>{
+ &quot;_id&quot; : 1.0,
+ &quot;arr&quot; : [ 
+     {
+         &quot;c&quot; : [ 
+             {
+                 &quot;a&quot; : 10,
+                 &quot;b&quot; : 10
+             }, 
+             {
+                 &quot;a&quot; : 15,
+                 &quot;b&quot; : 15
+             }
+         ]
+     }, 
+     {
+         &quot;c&quot; : [ 
+             {
+                 &quot;a&quot; : 20,
+                 &quot;b&quot; : 20
+             }, 
+             {
+                 &quot;a&quot; : 25,
+                 &quot;b&quot; : 25
+             }
+         ]
+     }
+ ]
+}
+</code></pre><h3 id="&#x5220;&#x9664;arr&#x6570;&#x7EC4;--&#x4E2D;&#x7684;c&#x6570;&#x7EC4;&#x4E2D;-a25--b25">&#x5220;&#x9664;arr&#x6570;&#x7EC4;  &#x4E2D;&#x7684;c&#x6570;&#x7EC4;&#x4E2D; (a=25 &amp;&amp; b=25)</h3>
+<pre><code>db.getCollection(&apos;user&apos;).update(
+ {&quot;_id&quot;: 1.0},
+ {$pull: {&quot;arr&quot;: {&quot;c&quot;: {$elemMatch: {&quot;a&quot;: 25,&quot;b&quot;:25}}}}}
+)
+</code></pre></li>
+</ol>
+<h5 id="&#x7ED3;&#x679C;">&#x7ED3;&#x679C;</h5>
+<pre><code>{
+    &quot;_id&quot; : 1.0,
+    &quot;arr&quot; : [ 
+        {
+            &quot;c&quot; : [ 
+                {
+                    &quot;a&quot; : 10,
+                    &quot;b&quot; : 10
+                }, 
+                {
+                    &quot;a&quot; : 15,
+                    &quot;b&quot; : 15
+                }
+            ]
+        }
+    ]
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="pop.html" class="navigation navigation-prev " aria-label="Previous page: 1.4 删除数组--$pop">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="push.html" class="navigation navigation-next " aria-label="Next page: 1.6 添加数组--$push">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.5 筛选删除数组--$pull","level":"1.2.5","depth":2,"next":{"title":"1.6 添加数组--$push","level":"1.2.6","depth":2,"path":"chapter1/push.md","ref":"chapter1/push.md","articles":[]},"previous":{"title":"1.4 删除数组--$pop","level":"1.2.4","depth":2,"path":"chapter1/pop.md","ref":"chapter1/pop.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/pull.md","mtime":"2018-09-18T07:11:42.007Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-18T07:18:34.034Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
