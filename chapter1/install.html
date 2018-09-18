@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.3 删除对象的属性--$unset · GitBook</title>
+        <title>1.1 MongoDB安装 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="set.html" />
+    <link rel="next" href="addPwd.html" />
     
-    
-    <link rel="prev" href="addPwd.html" />
     
 
     </head>
@@ -116,7 +114,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="install.html">
+        <li class="chapter active" data-level="1.2.1" data-path="install.html">
             
                 <a href="install.html">
             
@@ -142,7 +140,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.3" data-path="unset.html">
+        <li class="chapter " data-level="1.2.3" data-path="unset.html">
             
                 <a href="unset.html">
             
@@ -403,7 +401,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >1.3 删除对象的属性--$unset</a>
+        <a href=".." >1.1 MongoDB安装</a>
     </h1>
 </div>
 
@@ -418,65 +416,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x5220;&#x9664;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x6216;&#x628A;&#x6570;&#x7EC4;&#x7684;&#x5176;&#x4E2D;&#x4E00;&#x9879;&#x53D8;&#x6210;null">&#x5220;&#x9664;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x6216;&#x628A;&#x6570;&#x7EC4;&#x7684;&#x5176;&#x4E2D;&#x4E00;&#x9879;&#x53D8;&#x6210;null</h3>
-<h5 id="&#x6709;&#x4EE5;&#x4E0B;json">&#x6709;&#x4EE5;&#x4E0B;json</h5>
-<pre><code>{
-    &quot;_id&quot; : 1.0,
-    &quot;arr&quot; : [ 
-        {
-            &quot;item&quot; : &quot;A&quot;,
-            &quot;score&quot; : 5.5
-        }, 
-        {
-            &quot;item&quot; : &quot;B&quot;,
-            &quot;score&quot; : 4.0,
-            &quot;answers&quot; : [ 
-                {
-                    &quot;q&quot; : 1.0,
-                    &quot;a&quot; : 0.0
-                }, 
-                {
-                    &quot;q&quot; : 1.0,
-                    &quot;a&quot; : 0.0
-                }
-            ]
-        }
-    ]
-}
-</code></pre><ol>
-<li>$unset&#x64CD;&#x4F5C;&#x7B26;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x6BB5;<pre><code>// &#x5220;&#x9664;arr&#x6570;&#x7EC4;&#x7684;&#x7B2C;&#x4E00;&#x9879;&#x7684;score&#x5C5E;&#x6027;
-db.getCollection(&apos;user&apos;).update(
- {&quot;_id&quot;: 1.0},
- {$unset: {&quot;arr.0.score&quot;: 1}}
-)
-</code></pre></li>
-<li>&#x5F53;&#x5339;&#x914D;&#x5230;&#x7684;&#x662F;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#xFF0C;$unset&#x66FF;&#x6362;&#x6307;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#x4E3A;null&#x800C;&#x4E0D;&#x662F;&#x5220;&#x9664;&#x6389;&#x6307;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x6B64;&#x884C;&#x4E3A;&#x4FDD;&#x6301;&#x6570;&#x7EC4;&#x5927;&#x5C0F;&#x548C;&#x4F4D;&#x7F6E;&#x4E0D;&#x53D8;&#xFF1B;<pre><code>// &#x628A;&#x6570;&#x7EC4;arr&#x7684;&#x7B2C;&#x4E8C;&#x9879;&#x7684;answers&#x7684;&#x7B2C;&#x4E8C;&#x9879;&#x7684;&#x503C;&#x53D8;&#x4E3A;null
-db.getCollection(&apos;user&apos;).update(
- {&quot;_id&quot;: 1.0},
- {$unset: {&quot;arr.1.answers.1&quot;: 1}}
-)
-</code></pre><h5 id="&#x7ED3;&#x679C;&#x4E3A;">&#x7ED3;&#x679C;&#x4E3A;</h5>
-<pre><code>{
- &quot;_id&quot; : 1.0,
- &quot;arr&quot; : [ 
-     {
-         &quot;item&quot; : &quot;A&quot;
-     }, 
-     {
-         &quot;item&quot; : &quot;B&quot;,
-         &quot;score&quot; : 4.0,
-         &quot;answers&quot; : [ 
-             {
-                 &quot;q&quot; : 1.0,
-                 &quot;a&quot; : 0.0
-             }, 
-             null
-         ]
-     }
- ]
-}
-</code></pre></li>
-</ol>
+                                <p><strong>1. &#x8FDB;&#x5165;mongodb\bin&#x76EE;&#x5F55; =&gt;cmd</strong></p>
+<p><strong>2. &#x5728;mongodb&#x76EE;&#x5F55;&#x521B;&#x5EFA; \data\db</strong></p>
+<p><strong>3. cmd&#x6267;&#x884C;<code>mongod.exe --dbpath=D:\mongodb\data\db</code></strong></p>
+<p><strong>4. &#x5728;mongodb&#x76EE;&#x5F55;&#x521B;&#x5EFA; \data\log</strong></p>
+<p><strong>5. cmd&#x6267;&#x884C; <code>mongod.exe --logpath=D:\mongodb\data\log\mongodb.log</code></strong></p>
+<p><strong>6. &#x5728;mongodb&#x76EE;&#x5F55;&#x521B;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF08;mongodb.config&#xFF09;</strong></p>
+<p><strong>7. &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5185;&#x5BB9; </strong></p>
+<pre><code class="lang-bash">dbpath=D:\mongodb\data\db
+logpath=D:\mongodb\data\<span class="hljs-built_in">log</span>\mongodb.log
+</code></pre>
+<p><strong>8. &#x6267;&#x884C; <code>mongod.exe --config D:\mongodb\mongodb.config</code></strong></p>
+<p><strong>9. &#x6DFB;&#x52A0;&#x5230;&#x670D;&#x52A1; &#xFF08;servies.msc&#xFF09;</strong></p>
+<pre><code class="lang-bash">mongod.exe --dbpath=D:\mongodb\data\db --logpath=D:\mongodb\data\<span class="hljs-built_in">log</span>\log.txt --install --serviceName <span class="hljs-string">&quot;MongoDB&quot;</span>
+</code></pre>
+<p><strong>10. &#x5F00;&#x542F;&#x5173;&#x95ED;&#x670D;&#x52A1;</strong></p>
+<pre><code class="lang-bash">net start mongodb
+net stop mongodb
+sc delete <span class="hljs-string">&quot;MongoDB&quot;</span>     <span class="hljs-comment"># &#x5220;&#x9664;&#x670D;&#x52A1;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -504,12 +462,8 @@ db.getCollection(&apos;user&apos;).update(
 
             
                 
-                <a href="addPwd.html" class="navigation navigation-prev " aria-label="Previous page: 1.2 MongoDB加密">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="set.html" class="navigation navigation-next " aria-label="Next page: 1.4 更新或添加属性--$set">
+                <a href="addPwd.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 1.2 MongoDB加密">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -520,7 +474,7 @@ db.getCollection(&apos;user&apos;).update(
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.3 删除对象的属性--$unset","level":"1.2.3","depth":2,"next":{"title":"1.4 更新或添加属性--$set","level":"1.2.4","depth":2,"path":"chapter1/set.md","ref":"chapter1/set.md","articles":[]},"previous":{"title":"1.2 MongoDB加密","level":"1.2.2","depth":2,"path":"chapter1/addPwd.md","ref":"chapter1/addPwd.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/unset.md","mtime":"2018-09-18T06:52:07.403Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-18T09:17:44.267Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.1 MongoDB安装","level":"1.2.1","depth":2,"next":{"title":"1.2 MongoDB加密","level":"1.2.2","depth":2,"path":"chapter1/addPwd.md","ref":"chapter1/addPwd.md","articles":[]},"previous":{"title":"第一章 MongoDB操作符","level":"1.2","depth":1,"ref":"","articles":[{"title":"1.1 MongoDB安装","level":"1.2.1","depth":2,"path":"chapter1/install.md","ref":"chapter1/install.md","articles":[]},{"title":"1.2 MongoDB加密","level":"1.2.2","depth":2,"path":"chapter1/addPwd.md","ref":"chapter1/addPwd.md","articles":[]},{"title":"1.3 删除对象的属性--$unset","level":"1.2.3","depth":2,"path":"chapter1/unset.md","ref":"chapter1/unset.md","articles":[]},{"title":"1.4 更新或添加属性--$set","level":"1.2.4","depth":2,"path":"chapter1/set.md","ref":"chapter1/set.md","articles":[]},{"title":"1.5 重新命名属性名--$rename","level":"1.2.5","depth":2,"path":"chapter1/rename.md","ref":"chapter1/rename.md","articles":[]},{"title":"1.6 删除数组--$pop","level":"1.2.6","depth":2,"path":"chapter1/pop.md","ref":"chapter1/pop.md","articles":[]},{"title":"1.7 筛选删除数组--$pull","level":"1.2.7","depth":2,"path":"chapter1/pull.md","ref":"chapter1/pull.md","articles":[]},{"title":"1.8 添加数组--$push","level":"1.2.8","depth":2,"path":"chapter1/push.md","ref":"chapter1/push.md","articles":[]},{"title":"1.9 数组排序--$sort","level":"1.2.9","depth":2,"path":"chapter1/sort.md","ref":"chapter1/sort.md","articles":[]},{"title":"1.10 数组截取--$slice","level":"1.2.10","depth":2,"path":"chapter1/slice.md","ref":"chapter1/slice.md","articles":[]},{"title":"1.11 占位符--$","level":"1.2.11","depth":2,"path":"chapter1/placeholder.md","ref":"chapter1/placeholder.md","articles":[]},{"title":"1.12 数据导出导入","level":"1.2.12","depth":2,"path":"chapter1/export.md","ref":"chapter1/export.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/install.md","mtime":"2018-09-18T08:36:57.521Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-18T09:17:44.267Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
